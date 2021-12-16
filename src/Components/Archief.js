@@ -1,13 +1,9 @@
 import React from 'react'
-import { Button, Col, Container, Row } from 'react-bootstrap'
-import {MDBInput} from 'mdbreact'
-import Header from './Header'
-// import useFetch from './useFetch'
-const Dashboard = () => {
+
+const Archief = () => {
     return (
         <>
-              <Header />
-              {/* <Button className='butto'>Archief</Button> */}
+            <Header />
               <br/>
             <div className='moob'>
                 <div className='cardy2'>
@@ -87,12 +83,9 @@ const Dashboard = () => {
                         </Col>
                     </Row>
                 </div>
-            </div>
-
-
-            
+            </div> 
         </>
     )
 }
 
-export default Dashboard
+export default Archief

@@ -5,6 +5,8 @@ import Loading from './Components/Loading';
 import Login from './Components/Login';
 import PatiantLog from './Components/PatiantLog';
 import WaitingPage from './Components/WaitingPage';
+import UseFetch from './Components/useFetch';
+import Header from './Components/Header';
 // import { BrowserRouter as Router , Switch , Route } from 'react-router-dom';
 
 function App() {
@@ -15,7 +17,9 @@ function App() {
      {/* <Loading /> */}
      {/* <PatiantLog /> */}
      {/* <WaitingPage /> */}
-     <Dashboard/>
+     {/* <Dashboard/> */}
+     <UseFetch />
+     {/* <Header /> */}
     </div>
   );
 }

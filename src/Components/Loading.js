@@ -3,7 +3,7 @@ import {Load} from '../assets';
 
 function Loading() {
     return (
-        <div  >
+        <div  className='fonts'>
             <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             <img id="myDIV" src={Load} alt=""/>
             <br/><br/>
