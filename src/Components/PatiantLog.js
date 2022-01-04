@@ -11,36 +11,67 @@ import ReactCalendar from './ReactCalendar'
 function PatiantLog() {
     return (
       <>
-        <Container style={{width:"55%" , color:"#43425D"}}>
+        <Container className='fonts' style={{width:"55%" , color:"#43425D"}}>
             <h1 className=" mt-5 text-center rounded b" style={{fontSize:"48"}}> احجز ميعادك اونلاين </h1>
             <br/>
             <div className="slider"></div>
             <h4 className=" mt-2 text-center b" style={{fontSize:"48"}}> املىء بياناتك الان وسنقوم بالاتصال بك لتأكيد الحجز </h4>
             <br/>
             <Row className="mt-3 mr-20 ml-20 ">
-                <Col lg={6} md={6} sm={12} className=" ml-auto mr-auto rounded-lg">
+                {/* <Col lg={6} md={6} sm={12} className=" ml-auto mr-auto rounded-lg">
                  <Form >
-                   <Form.Group className="mb-3" controlId="formBasicFname">
-                    <Form.Control style={{color:"#43425D"}} className="text-right" type="text" placeholder="الاسم الاخير" />
+                   <Form.Group className="mb-3 rb" controlId="formBasicLname ">
+                    <Form.Control style={{color:"#43425D"}} className="text-right " type="text" placeholder="الاسم الاخير" />
                   </Form.Group>
+                  <Form.Group className="mb-3 text-right rd" controlId="formBasicEmail">
+                      <Form.Control className="text-right " type="email" placeholder="البريد الالكتروني" />
+                  </Form.Group>
+                 </Form>
+                </Col>
+                <Col lg={6} md={6} sm={12} className=" ml-auto mr-auto rounded-lg">
+                <Form>
+                   <Form.Group className="mb-3 ra" controlId="formBasicFname">
+                    <Form.Control className="text-right " type="text" placeholder="الاسم الاول" />
+                  </Form.Group>
+                  <Form.Group className="mb-3 rc" controlId="formBasicPassword">
+                      <Form.Control className="text-right " type="text" placeholder="رقم الهاتف" />
+                  </Form.Group>               
+                 </Form>
+                </Col> */}
 
-                  <Form.Group className="mb-3 text-right" controlId="formBasicEmail">
-                      <Form.Control className="text-right" type="email" placeholder="البريد الالكتروني" />
+
+                <Col lg={6} md={6} sm={12} className=" ml-auto mr-auto rounded-lg">
+                 <Form className='rb'>
+                   <Form.Group className="mb-3 rb" controlId="formBasicLname ">
+                    <Form.Control style={{color:"#43425D"}} className="text-right " type="text" placeholder=" الاسم الاخير" />
+                  </Form.Group>
+                  </Form>
+                  </Col>
+                  <Col lg={6} md={6} sm={12} className=" ml-auto mr-auto rounded-lg">
+                  <Form className='ra'> 
+                  <Form.Group className="mb-3 text-right ra" controlId="formBasicEmail">
+                      <Form.Control className="text-right " type="email" placeholder="الاسم الاول" />
                   </Form.Group>
                  </Form>
                 </Col>
 
                 <Col lg={6} md={6} sm={12} className=" ml-auto mr-auto rounded-lg">
-                <Form>
-                   <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Control className="text-right" type="text" placeholder="الاسم الاول" />
+                <Form className='rc'>
+                   <Form.Group className="mb-3 rc" controlId="formBasicFname">
+                    <Form.Control className="text-right " type="text" placeholder="البريد الالكتروني" />
                   </Form.Group>
-
-                  <Form.Group className="mb-3" controlId="formBasicPassword">
-                      <Form.Control className="text-right" type="text" placeholder="رقم الهاتف" />
+                  </Form>
+                  </Col>
+                  <Col lg={6} md={6} sm={12} className=" ml-auto mr-auto rounded-lg">
+                  <Form className='rd'>
+                  <Form.Group className="mb-3 rd" controlId="formBasicPassword">
+                      <Form.Control className="text-right " type="text" placeholder="رقم الهاتف" />
                   </Form.Group>               
                  </Form>
                 </Col>
+
+
+
 
                 <Col lg={6} md={6} sm={12} className=" ml-auto mr-auto rounded-lg">
                 <Form>

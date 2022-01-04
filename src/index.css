@@ -12,24 +12,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-/* form{
-width: 50%;
-height: 70%;
-text-align: center;
-padding-left: auto;
-padding-right: auto;
-border: black 10px;
-} */
-/* input{
-  text-align: center;
-}
-.form-group{
-padding-left: auto;
-padding-right: auto;
-} */
-label{
-  margin-left: -70%!important;
-}
+@import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
+
 .Form-Control{
   border: 10px solid red !important;
   border-radius: 2.25rem !important;
@@ -43,11 +27,8 @@ label{
   margin-right: auto;
   margin-left: auto; 
 }
-/* .p.b{
-  font-size: 48!important;
-} */
 .btn-block{
-  width: 50%;
+  width: 75%;
   background-color: #43425D;
   color: white;
   border-color: transparent;
@@ -68,9 +49,17 @@ label{
     /* border-radius: 33.25rem; */
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+.rb {order: 1 !important; }
+      .ra  {order: 2!important; }
+      .rd  {order: 3!important; }
+      .rc  {order: 4!important; }
+
 @media screen and (max-width: 500px) {
   .container{width: 80%!important;} 
-
+  .ra {order:1 !important ; }
+  .rb {order:2!important; }
+  .rc {order:3 !important ; }
+  .rd {order:4 !important ; }
 }
 .react-calendar.pop{
   width: 100%!important;
@@ -105,7 +94,14 @@ label{
 .btn-block.mo{
   width: 30%;
 }
+.btn-block.vo{
+  width: 75%;
+}
 .btn-block.mo:hover{
+  color: white !important;
+  background-color: #59577ee7;
+}
+.btn-block.vo:hover{
   color: white !important;
   background-color: #59577ee7;
 }
@@ -117,24 +113,147 @@ label{
 }
 .cardy2{
   border: 1px solid#43425Ded;
-  border-radius: 4px!important;
+  border-radius: 15px!important;
   background-color: #43425Ded;
   color: #fff;
+  padding-left: 15px;
+}
+.cardy3{
+  border: 1px solid#43425Ded;
+  border-radius: 15px!important;
+  background-color: white;
+  color: #43425Ded;
   padding-left: 15px;
 }
 .bobo{
   margin-left: 5px!important;
   text-align: left;
   font-size: 86px;
+  font-family: 'Roboto', sans-serif;
 }
 .bo{
   margin-left: 0px!important;
   text-align: left;
-  font-size: 40px;
-  margin-right: 10px!important;
+  font-size: 30px;
+  margin-right: 0px!important;
+  font-family: 'Roboto', sans-serif;
 }
 .moob{
   padding-left: 4px;
   padding-right: 4px;
   width: 100%;
+}
+.fonts{
+  font-family: 'Almarai', sans-serif!important;
+}
+.ahme1{
+  font-size: 90px;
+}
+/* #checkbox1,  #checkbox2{
+  width: 50px;
+  height: 20px;
+  height: 5px;
+} */
+
+input[type=checkbox]{
+  display: block;
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 0.2em;
+}
+label{
+  display: block;
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 0.2em;
+}
+
+input[type=checkbox] {
+  display:none;
+}
+
+input[type=checkbox] + label:before {
+  content: "\2714";
+  border: 1px solid #43425Ded;
+  border-radius: 0.3em;
+  background-color: #fff;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding-left: 0.2em;
+  padding-bottom: 0.1em;
+  margin-right: 0.2em;
+  vertical-align: bottom;
+  color: transparent;
+  transition: .2s;
+}
+input[type=checkbox]:checked + label:before {
+  background-color: MediumSeaGreen;
+  border-color: MediumSeaGreen;
+  color: #fff;
+}
+.boo{
+  margin-left: 0px!important;
+  margin-bottom: 4px!important;
+  text-align: left;
+  font-size: 30px;
+  margin-right: 10px!important;
+  font-family: 'Roboto', sans-serif;
+}
+/* input[type=text]{
+  width: 80%;
+  margin-top: 10px;
+  height: 40px;
+  font-size: 20px;
+  padding-left: 15px;
+} */
+.boxcontainer{
+  margin: auto;
+  margin-top: 1%;
+  position: relative;
+  width: 80%;
+  height: 50px;
+  border: 3px solid #43425D;
+  padding: 0px 30px;
+  border-radius: 50px;
+}
+.elementscontainer{
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.search{
+  border: none;
+  height: 100%;
+  width: 100%;
+  padding: 0px 5px;
+  border-radius: 50px;
+  font-size: 25px;
+  color: #43425D;
+  font-weight: 500;
+}
+.search:focus{
+  outline: none;
+}
+.material-icons{
+  font-size: 30px;
+  color: #43425D;
+  vertical-align: middle;
+}
+.dropdown-item{
+  color: white!important;
+  font-size: 20px;
+}
+#dropdown-basic{
+  background-color: #43425D;
+}
+.dropdown-item:hover{
+color: white!important;
+background-color: #6B6A82;
+/* background-color: white; */
+font-weight: 600;
+text-decoration: underline;
+}
+.dropdown-menu.show{
+  background-color: #6B6A82;
 }
